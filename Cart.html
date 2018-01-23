@@ -1,0 +1,167 @@
+<html xmlns = ″http://www.w3.org/1999/xhtml″>
+  <head> 
+  <title> ::SHOPPING CART:: </title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+
+<body id="bd">
+
+<div id="main-header">
+			<div id = "topbar"></div>
+				<div id = "logo">
+				<a href="index.html"><img src="media/Logo.png" alt="How Far Na Dot Click"></a>
+				</div>
+				<span id = "slogan">Click it! See it!! Buy it!!!</span>
+				
+				<div id="user-menu"> 
+				<li><a href="Cart.html"</a><img src="media/cart.png" width="30px" height="20px">Cart</li>
+				<li><a href="#"</a>Log in | Join</li>
+				
+				</div>
+			</div>
+			<div id="Navigation-header">
+				<nav>
+					<a href="index.html">Home</a>
+					<a href="product.html">Products</a>
+					<a href="Cart.html">Shopping Cart</a>
+					<a href="contact.html">Contact us</a>
+				</nav>
+			</div>
+
+<div id= "wrapper">
+			
+<div id="cartBox">
+<table id="tbl" border = "border" widtd="80%" height="80%">
+<tr>
+       <th>S/No</th>
+       <th> Image of Product </th>
+       <th> Name of Product</th>
+	   <th> ($) Result</th>
+</tr>
+<tr>
+       <td> 1)</td>
+       <td> <img src="products/product01.png" alt="How Far Na Dot Click"> </td>
+       <td> <span id="productName">Hp Work Station $1500</span><form name="Qty" action="">
+	   <select  name="optionList" id="optionList" onchange="TotalCost1(this.form)"> 
+	   <option value="0">0</option> <option value="1">1</option> <option value="2">2</option> <option value="3">3</option> <option value="4">4</option>
+       </select></form></td>
+	   <td> <p id="result"></p> </td>
+</tr>
+
+<tr>
+       <td> 2)</td>
+       <td> <img src="products/product02.png" alt="How Far Na Dot Click"> </td>
+        <td> <span id="productName"><span>Play Station Portable $160.99</span><form name="Qty" action="">
+	   <select name="optionList" id="optionList" onchange="TotalCost2(this.form)"> 
+	   <option value="0">0</option> <option value="1">1</option> <option value="2">2</option> <option value="3">3</option> <option value="4">4</option>
+       </select></form></td>
+	   <td> <p id="result1"></p> </td>
+</tr>
+
+<tr>
+       <td> 3)</td>
+       <td> <img src="products/product03.png" alt="How Far Na Dot Click"> </td>
+       <td> <span id="productName"><span>Play Station 4 slim $540.99</span><form name="Qty" action="">
+	   <select  name="optionList" id="optionList" onchange="TotalCost3(this.form)"> 
+	   <option value="0">0</option> <option value="1">1</option> <option value="2">2</option> <option value="3">3</option> <option value="4">4</option>
+       </select></form></td>
+	   <td> <p id="result2"></p> </td>
+</tr>
+
+<tr>
+       <td> 4)</td>
+       <td> <img src="products/product04.png" alt="How Far Na Dot Click"> </td>
+       <td> <span id="productName">XBox 360 $700.99</span><form name="Qty" action="">
+	   <select  name="optionList" id="optionList" onchange="TotalCost4(this.form)"> 
+	   <option value="0">0</option> <option value="1">1</option> <option value="2">2</option> <option value="3">3</option> <option value="4">4</option>
+       </select></form></td>
+	   <td> <p id="result3"></p> </td>
+</tr>
+
+<tr>
+       <td> 5)</td>
+       <td> <img src="products/product05.png" alt="How Far Na Dot Click"> </td>
+       <td> <span id="productName">Alienware Personal pc $3000</span><form name="Qty" action="">
+	   <select  name="optionList" id="optionList" onchange="TotalCost5(this.form)"> 
+	   <option value="0">0</option> <option value="1">1</option> <option value="2">2</option> <option value="3">3</option> <option value="4">4</option>
+       </select></form></td>
+	   <td> <p id="result4"></p> </td>
+</tr>
+
+<tr>
+       <td> 6)</td>
+       <td> <img src="media/product13.jpg" alt="How Far Na Dot Click"> </td>
+       <td> <span id="productName">Uncharted Ps4 $80.99</span><form name="Qty" action="">
+	   <select  name="optionList" id="optionList" onchange="TotalCost6(this.form)"> 
+	   <option value="0">0</option> <option value="1">1</option> <option value="2">2</option> <option value="3">3</option> <option value="4">4</option>
+       </select></form></td>
+	   <td> <p id="result5"></p> </td>
+</tr>
+
+<tr>
+       <td>  </td>
+       <td>  <button type="button" onclick ="subTotalCost1(this.form); Total(this.form);">Get my Invoice</button></td>
+       <td> SubTotal Cost </td>
+		<td> <p id="sub_total"></p> </td>
+</tr>
+
+<tr>
+       <td>  </td>
+        <td>  </td> 
+       <td> Total with 15% VAT </td>
+		<td> <p id="total"></p> </td>
+</tr>
+</table>
+</div>
+
+<div id="footer">
+			<div class="container">
+				<div class="footer_sub_2">
+					<h2>Our Story</h2>
+					<p>We have been offering sale of Electronic Gadgets Since the year 2012, 
+					and have been known as the best so far in Northern Cyprus, 
+					our goods are Affordable because we simply target students. 
+					Our services are Guaranteed.</p></p>
+				</div>
+				<div class="footer_sub_2">
+					<center>
+						<h2>Important Links</h2>
+						<ul>
+									
+							<li><a href="index.html">Home</a></li>
+							<li><a href="product.html">Products</a></li>
+							<li><a href="Cart.html">Shopping Cart</a></li>
+							<li><a href="contact.html">Contact us</a></li>
+						</ul>
+					</center>
+				</div>
+				<div class="footer_sub_2">
+					<center>
+						<h2>Social Links</h2>
+						<ul>		
+							<li><a href="https://www.instagram.com"><img width="30px" height="25px" src="media/ig.jpeg">Instagram</a></li>
+							<li><a href="https://www.youtube.com"><img width="30px" height="25px" src="media/youtube.png">Yotube</a></li>
+							<li><a href="https://www.twitter.com"><img width="30px" height="25px" src="media/twitter.png">Twitter</a></li>
+							<li><a href="https://www.facebook.com"><img width="30px" height="25px" src="media/facebook.png">Facebook</a></li>
+						</ul>
+					</center>
+				</div>
+				<div class="footer_sub_3">
+					<center>
+						<h2>Get the Juicy stuffs first</h2> </br></br>
+						<form name="myForm" onsubmit="submitFunction()">
+						<input type="text" name="subs" placeholder="example@mail.com" class="subs">
+						<input type="submit" name="submit_btn" value="Subscribe" class="sub_btn" > </form>
+					</center>
+				</div>
+				</div>
+			</div>
+		</div>
+		 &nbsp; </br>
+		<center>copyright &copy 2017 all Rights Reserved HOW FAR NA DOT CLICK</center>
+		&nbsp; </br>
+		
+</div>
+<script type="text/javascript" src="javaScript/java.js"></script>
+</body>
+   </html>
